@@ -24,10 +24,12 @@ The blog is built with [Jekyll](https://jekyllrb.com) 4.4, which needs Ruby 3.2 
   ```
 
 > [!TIP]
-> It might seem obvious for some, but don't forget to either:
+> It might seem obvious for some (it is also easy to forget!), but you should either:
 >   - run the next commands with these environment variables set (`env GEM_HOME="$HOME/gems" PATH="$HOME/gems/bin:$PATH" *commands*`),
 >   - source your `.bashrc` file after (`source $HOME/.bashrc`),
 >   - or execute the rest of the commands in a new terminal instance.
+>  
+> Otherwise, the next commands will fail!
 
   If `ruby -v` reports a version older than 3.2 (e.g. Ubuntu 22.04), install a newer Ruby with a version manager such as [mise](https://mise.jdx.dev) or [rbenv](https://github.com/rbenv/rbenv).
 
