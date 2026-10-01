@@ -23,6 +23,12 @@ The blog is built with [Jekyll](https://jekyllrb.com) 4.4, which needs Ruby 3.2 
   export PATH="$HOME/gems/bin:$PATH"
   ```
 
+> [!TIP]
+> It might seem obvious for some, but don't forget to either:
+>   - run the next commands with these environment variables set (`env GEM_HOME="$HOME/gems" PATH="$HOME/gems/bin:$PATH" *commands*`),
+>   - source your `.bashrc` file after (`source $HOME/.bashrc`),
+>   - or execute the rest of the commands in a new terminal instance.
+
   If `ruby -v` reports a version older than 3.2 (e.g. Ubuntu 22.04), install a newer Ruby with a version manager such as [mise](https://mise.jdx.dev) or [rbenv](https://github.com/rbenv/rbenv).
 
 - **macOS**: do not use the Ruby that ships with macOS (it is too old). Follow the [Jekyll macOS guide](https://jekyllrb.com/docs/installation/macos/), or with [Homebrew](https://brew.sh):
@@ -63,7 +69,7 @@ Configuration file: /home/USER/ift6758-blog-template/_config.yml
             Source: /home/USER/ift6758-blog-template
        Destination: /home/USER/ift6758-blog-template/_site
  Incremental build: disabled. Enable with --incremental
-      Generating... 
+      Generating...
                     done in 0.661 seconds.
  Auto-regeneration: enabled for '/home/USER/ift6758-blog-template'
     Server address: http://127.0.0.1:4000/
